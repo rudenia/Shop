@@ -1,0 +1,23 @@
+.header__main
+    .container
+        .header__content
+            .header__logo.logo
+                +icon('logo', 'logo__icon')
+            .header__phones
+                .header__item
+                     a(href='tel:487345678').header__phone 48 734 56 78
+                     a(href='').header__link Call us
+                .header__item
+                     a(href='tel:487345879').header__phone 48 734 58 79
+                     span.header__desription Call us too
+            .header__address.header-address
+                +icon('location', 'header-address__icon')
+                .header-address__text Wroclaw, ul.Dulga 27, apt. 3
+            .header__shop
+                .header-goods
+                    span.header-goods__price 0 z&#x142;
+                    span.header-goods__count 0 items
+                .header-basket
+                    +icon('cart', 'header-basket__icon')
+                    span.header-basket__text Cart
+

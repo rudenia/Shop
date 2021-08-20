@@ -1,0 +1,92 @@
+@import "helpers/libs";
+@import "helpers/fonts";
+@import "helpers/mixins";
+@import "helpers/vars";
+@import "modules/utilits/mixins";
+@import "modules/header/header";
+@import "modules/navigation/navigation";
+@import "modules/small-block/small-block";
+
+html {
+  font-size: $base-font-size;
+  height: 100%;
+}
+
+body {
+  font-family: $main-font;
+  height: 100%;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul, li {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select { font: inherit; }
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea { vertical-align: middle; }
+
+textarea { resize: none; }
+
+section { position: relative; }
+
+input,
+select,
+button { outline: none; }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content { flex: 1 0 auto; }
+
+.container {
+  margin: 0 auto;
+  max-width: $content-size;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+//Модули
+//@import "modules/modules";
