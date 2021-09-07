@@ -1,4 +1,5 @@
 .header {
+  border-bottom: 1px solid $athens-gray;
   &__content {
     display: flex;align-items: center;
   }
@@ -100,6 +101,7 @@
     height: 40px;
     padding: 0 20px;
     border-radius: 20px;
+    cursor: pointer;
     & > * {
       margin-right: 15px;
       &:last-child { margin-right: 0; }
@@ -112,5 +114,8 @@
       color: $tundora;
       font-weight: 600;
     }
+  }
+  &__search {
+    margin-left: auto;
   }
 }
